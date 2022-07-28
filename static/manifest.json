@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+
+  "name": "RedditDeck",
+  "description": "Tweetdeck for Reddit for every new tab you open",
+  "short_name": "RedditDeck",
+  "version": "0.0.0.4",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+
+  "permissions": ["tabs"],
+  "content_security_policy": "script-src 'self' https://storage.googleapis.com; object-src 'self'"
+}
